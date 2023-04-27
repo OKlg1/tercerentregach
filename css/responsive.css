@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+#carouselExampleCaptions .carousel-caption {
+    font-size: 15px;
+    padding: 0 30px;
+}
+}
