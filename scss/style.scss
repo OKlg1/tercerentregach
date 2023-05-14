@@ -1,75 +1,99 @@
-#carouselExampleCaptions .carousel-caption {
-    position: absolute;
-    top: 50%;
-    margin-top: -104px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 15;
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
+$colorbg: #028fcc;
+$marginH: 20px;
+$button: green;
+$coloricons: rgb(255, 100, 45);
+$colorbuttonsprimary: #028fcc;
+$colorbuttonssecondary: #ffc107;
+$colortextprimary: gray;
+$colortextsecondary: #028fcc;
+
+
+
+#carouselExampleCaptions {
+
+    .carousel-inner {
+
+        .carousel-titles {
+            background: url(../images/slider/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+        }
+
+        .carousel-item-1 {
+            background: url(../images/slider/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .carousel-item-2 {
+            background: url(../images/slider/2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .carousel-item-3 {
+            background: url(../images/slider/3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 15;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+        padding: 3%;
+
+        .carousel-title {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+            span {
+                color: #028fcc;
+            }
+        }
+
+        
+    }
 }
 
-#carouselExampleCaptions .carousel-caption h1 {
-    color: #fff;
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 30px;
+
+#services {
+
+    .contenedor-icono {
+
+        i {
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            background-color: $coloricons !important;
+            padding: 5px 11px 10px 11px;
+            border-radius: 5px;
+        }
+    }
+
+    .service-info {
+        margin-top: 20px;
+        margin-bottom: 20%;
+    }
 }
 
-#carouselExampleCaptions .carousel-caption h1 span {
-    color: #028fcc;
-}
-
-.carousel-fade .carousel-inner .carousel-item:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, .7);
-}
-
-.carousel-fade .carousel-inner .carousel-item-1 {
-    background: url(../images/slider/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.carousel-fade .carousel-inner .carousel-item-2 {
-    background: url(../images/slider/2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.carousel-fade .carousel-inner .carousel-item-3 {
-    background: url(../images/slider/3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.contenedor-icono i {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+// Navbar
+.navbar {
     background-color: rgb(255, 100, 45) !important;
-    padding: 5px 11px 10px 11px;
-    border-radius: 5px;
 }
-
-.service-info {
-    margin-top: 20px;
-    margin-bottom: 20%;
-}
-
-// h1, h2 {
-//     margin: 60px !important;
-// }
 
 .logo {
     clear: both;
@@ -80,42 +104,33 @@
     margin-bottom: 5%;
 }
 
-.panel .card .card-body {
-    color: #fff;
-    background-color: #028fcc;
+.panel {
+
+    .card {
+
+        .card-body {
+            color: #fff;
+            background-color: #028fcc;
+            padding: 10%;
+        }
+    }
 }
 
-section {
-    margin-top: 15%;
-    margin-bottom: 15%;
+main {
+
+    section {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
 }
+
+// Footer
 
 .suscription-form {
     width: 50%;
     margin: 0 auto;
 }
 
-.titulares {
-    background: url(../images/slider/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
-
-.color-title {
-    color: orange;
-}
-
-.carousel-titles {
-    background: url(../images/slider/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
-
-.icono {
-    font-size: 2em;
-}
 
 a.myanchor {
     display: block;
@@ -124,18 +139,28 @@ a.myanchor {
     visibility: hidden;
 }
 
-.navbar {
-    background-color: rgb(255, 100, 45) !important;
+.bg-1 {
+    background-color: $colorbg;
 }
 
 .text-primary {
-    color: #028fcc !important;
+    color: $colortextprimary !important;
 }
 
-.btn-primary {
-    background-color: #028fcc !important;
+.text-secondary {
+    color: $colortextsecondary !important;
 }
 
-.bg-primary {
-    background-color: #028fcc !important;
+
+.btn-1 {
+    background-color: $colorbuttonsprimary !important;
 }
+
+.btn-2 {
+    background-color: $colorbuttonssecondary !important;
+}
+
+.icono {
+    font-size: 2em;
+}
+

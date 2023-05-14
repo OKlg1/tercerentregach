@@ -1,7 +1,30 @@
+#carouselExampleCaptions .carousel-inner .carousel-titles {
+  background: url(../images/slider/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item-1 {
+  background: url(../images/slider/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item-2 {
+  background: url(../images/slider/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item-3 {
+  background: url(../images/slider/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 #carouselExampleCaptions .carousel-caption {
   position: absolute;
   top: 50%;
-  margin-top: -104px;
   left: 0;
   right: 0;
   text-align: center;
@@ -10,61 +33,32 @@
   font-size: 18px;
   font-weight: 300;
   color: #fff;
+  padding: 3%;
 }
-
-#carouselExampleCaptions .carousel-caption h1 {
+#carouselExampleCaptions .carousel-caption .carousel-title {
   color: #fff;
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-
-#carouselExampleCaptions .carousel-caption h1 span {
+#carouselExampleCaptions .carousel-caption .carousel-title span {
   color: #028fcc;
 }
 
-.carousel-fade .carousel-inner .carousel-item:after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.carousel-fade .carousel-inner .carousel-item-1 {
-  background: url(../images/slider/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.carousel-fade .carousel-inner .carousel-item-2 {
-  background: url(../images/slider/2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.carousel-fade .carousel-inner .carousel-item-3 {
-  background: url(../images/slider/3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.contenedor-icono i {
+#services .contenedor-icono i {
   font-size: 30px;
   color: rgb(255, 255, 255);
   background-color: rgb(255, 100, 45) !important;
   padding: 5px 11px 10px 11px;
   border-radius: 5px;
 }
-
-.service-info {
+#services .service-info {
   margin-top: 20px;
   margin-bottom: 20%;
+}
+
+.navbar {
+  background-color: rgb(255, 100, 45) !important;
 }
 
 .logo {
@@ -79,38 +73,17 @@
 .panel .card .card-body {
   color: #fff;
   background-color: #028fcc;
+  padding: 10%;
 }
 
-section {
-  margin-top: 15%;
-  margin-bottom: 15%;
+main section {
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 .suscription-form {
   width: 50%;
   margin: 0 auto;
-}
-
-.titulares {
-  background: url(../images/slider/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-
-.color-title {
-  color: orange;
-}
-
-.carousel-titles {
-  background: url(../images/slider/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-
-.icono {
-  font-size: 2em;
 }
 
 a.myanchor {
@@ -120,20 +93,28 @@ a.myanchor {
   visibility: hidden;
 }
 
-.navbar {
-  background-color: rgb(255, 100, 45) !important;
+.bg-1 {
+  background-color: #028fcc;
 }
 
 .text-primary {
+  color: gray !important;
+}
+
+.text-secondary {
   color: #028fcc !important;
 }
 
-.btn-primary {
+.btn-1 {
   background-color: #028fcc !important;
 }
 
-.bg-primary {
-  background-color: #028fcc !important;
+.btn-2 {
+  background-color: #ffc107 !important;
+}
+
+.icono {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
